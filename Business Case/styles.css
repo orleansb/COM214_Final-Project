@@ -1,0 +1,114 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d5b9a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Container styles */
+/* .container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} */
+
+.container {
+  width: 100%;
+}
+
+/* Header styles */
+header h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff !important;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #000000 !important;
+}
+
+.gradient{
+  height: 100px;
+  background-image: linear-gradient(#d5b9a5, #EDF2F8);
+}
+
+/* Main content styles */
+main {
+  padding: 20px 0;
+}
+
+main h2 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+main p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}

@@ -1,0 +1,52 @@
+{
+"company": [{
+    "name": "Nike",
+    "imgUrl": "nike.jpg",
+    "designation": "World-leading Sports Brand",
+    "theme": "light",
+    "review": {
+        "h4": "Partnering with Bella Tech has been a game-changer for our online presence.",
+        "p": "“Their creativity and technical prowess have allowed us to elevate the Nike brand experience for our customers, driving engagement and conversion rates. Their dedication to understanding our brand vision and translating it into compelling web design solutions have been instrumental in our success.”"
+    }
+},
+{
+    "name": "McDonald's",
+    "imgUrl": "McDonald.png",
+    "designation": "World's Largest Fast Food Restaurant Chain",
+    "theme": "light",
+    "review": {
+        "h4": "Our experience with Bella Tech has been exceptional.",
+        "p": "“They have successfully captured the essence of our brand on our website, ensuring a seamless user experience and incorporating our promotions effectively.”"
+    }
+},
+{
+    "name": "Apple",
+    "imgUrl": "Apple.png",
+    "designation": "Global Technology Company",
+    "theme": "dark",
+    "review": {
+        "h4": "Working with Bella Tech has been a testament to their dedication to excellence.",
+        "p": "“They have consistently delivered cutting-edge designs that align perfectly with our brand identity and user expectations. Their innovative approach to UI/UX design has enhanced the overall user journey on our website, reflecting the same level of craftsmanship and attention to detail that Apple is known for.”"
+    }
+},
+{
+    "name": "Starbucks",
+    "imgUrl": "Starbucks.webp",
+    "designation": "Global Coffeehouse Chain",
+    "theme": "dark",
+    "review": {
+        "h4": "We are delighted with the work that Bella Tech has done for us.",
+        "p": "“Their expertise in crafting user-friendly interfaces and incorporating our brand elements seamlessly into the website design has resulted in a visually stunning platform.”"
+    }
+},
+{
+    "name": "Coca-Cola",
+    "imgUrl": "CocaCola.webp",
+    "designation": "Multinational Beverage Corporation",
+    "theme": "light",
+    "review": {
+        "h4": "Bella Tech has been instrumental in helping us maintain our digital presence in line with the iconic Coca-Cola brand.",
+        "p": "“Their expertise in creating visually appealing and engaging websites has significantly contributed to our online success. Their team's professionalism and ability to adapt to our evolving needs make them a valuable partner for us.”"
+    }
+}
+]}
