@@ -20,7 +20,8 @@
 /* Navigation bar styles */
 nav {
   background-color: rgb(145, 76, 131); /* Change to your desired color */
-
+  z-index: 1000;
+  position: relative;
 }
 
 nav ul {

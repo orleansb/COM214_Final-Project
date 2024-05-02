@@ -19,6 +19,16 @@
     animation: jumpToPosition 3s ease-in-out forwards;
 }
 
+.text-container {
+    position: absolute;
+    top: 150vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
 @keyframes jumpToPosition {
     0% { transform: translateX(-300px) translateY(0); }
     12.5% { transform: translateX(-280px) translateY(-100px); }
@@ -36,5 +46,5 @@
 
 @keyframes moveUp {
     from { transform: translateY(0); }
-    to { transform: translateY(-300px); } 
+    to { transform: translateY(-600px); } 
 }
