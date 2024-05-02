@@ -1,114 +1,119 @@
-/* Reset CSS */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #d5b9a5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.about-us-box {
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the box horizontally */
+  padding: 20px; /* Add padding for spacing */
+  border: 2px solid rgb(228, 211, 223); /* Add border */
+  border-radius: 10px; 
+  background-color: rgb(228, 211, 223); 
+  box-shadow: 0 0 10px c; /* Add box shadow for depth */
+  flex :1;
 }
 
-/* Container styles */
-/* .container {
-  max-width: 800px;
-  margin: 50px auto;
-  background-color: #ffffff;
-  padding: 20px;
-  border: 2px solid #000000;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-} */
 
-.container {
-  width: 100%;
-}
-
-/* Header styles */
-header h1 {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+/* Navigation bar styles */
 nav {
-  text-align: center;
+  background-color: rgb(145, 76, 131); /* Change to your desired color */
+
 }
 
-/* Navigation styles */
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 20px 0;
+  margin: 0;
+  padding: 0 ;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(145, 76, 131);
 }
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+
 }
 
 nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
-  color: #ffffff !important;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
+  color: white; /* Change to your desired color */
 }
 
-nav ul li a:hover {
-  color: #000000 !important;
+li a:hover {
+  background-color: #b53e89;
 }
 
-.gradient{
-  height: 100px;
-  background-image: linear-gradient(#d5b9a5, #EDF2F8);
+.active {
+  background-color: rgb(119, 72, 110);
 }
 
-/* Main content styles */
-main {
-  padding: 20px 0;
-}
-
-main h2 {
-  font-size: 28px;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-main p {
-  color: #666666;
-  line-height: 1.6;
-}
-
-/* Footer styles */
-footer {
+/* Content styles */
+.content {
+  background-color: rgb(228, 211, 223); /* Change to your desired color */
+  padding: 50px;
+  font-size: medium;
   text-align: center;
+  font-size: larger;
+}
+
+.content h1 {
+  color: rgb(145, 76, 131); /* Change to your desired color */
+  margin-top: 100px;
+  margin-bottom: 300px;
+  font-size: 300px;
+  text-align: center;
+  text-decoration: line-through rgb(228, 211, 223) ;
+}
+
+.content p {
+  color: #171616; /* Change to your desired color */
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Picture styles */
+.picture {
   margin-top: 50px;
+  text-align: center;
+  margin-right: auto ;
+}
+.employees {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three columns */
+  gap: 20px; /* Gap between items */
+  margin-top: 50px;
+}
+
+.employee:nth-child(5) {
+  grid-column: 1 / 3; /* Center the last bio */
+  margin-bottom: 200px;
+}
+.employee {
+  text-align: center;
+}
+
+.employee img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.employee .bio {
+  margin-top: 10px;
+}
+
+.employee h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.employee p {
   font-size: 14px;
-  color: #666666;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-out forwards;
 }
