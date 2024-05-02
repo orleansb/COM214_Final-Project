@@ -31,10 +31,10 @@
 
 @keyframes moveViewDown {
     from { transform: translateY(0); }
-    to { transform: translateY(100px); } 
+    to { transform: translateY(-100px); } 
 }
 
 @keyframes moveUp {
     from { transform: translateY(0); }
-    to { transform: translateY(-100px); } 
+    to { transform: translateY(-300px); } 
 }
