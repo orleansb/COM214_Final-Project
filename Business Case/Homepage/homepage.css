@@ -26,10 +26,15 @@
     37.5% { transform: translateX(-240px) translateY(-100px); }
     50% { transform: translateX(-220px) translateY(-50px); }
     62.5% { transform: translateX(-200px) translateY(-100px); }
-    100% { transform: translateX(-175px) translateY(0px); }
+    100% { transform: translateX(-163px) translateY(0px); }
 }
 
 @keyframes moveViewDown {
     from { transform: translateY(0); }
-    to { transform: translateY(200px); } 
+    to { transform: translateY(100px); } 
+}
+
+@keyframes moveUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); } 
 }
