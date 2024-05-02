@@ -1,0 +1,234 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container1{
+    background-color:white;
+  }
+  
+  .about-us-box {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 20px; /* Add padding for spacing */
+    border: 2px solid darkgray; /* Add border */
+    border-radius: 10px; 
+    background-color: rgb(211, 144, 186); 
+    box-shadow: 0 0 10px c; /* Add box shadow for depth */
+    flex :1;
+  }
+  
+  
+  /* Navigation bar styles */
+  nav {
+    background-color:rgb(146, 62, 103); /* Change to your desired color */
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:rgb(146, 62, 103);
+  }
+  
+  nav ul li {
+    display: inline;
+  
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white; /* Change to your desired color */
+  }
+  
+  li a:hover {
+    background-color:  #852d62;
+  }
+  
+  .active {
+    background-color: rgb(201, 94, 149);
+  }
+  
+  /* Content styles */
+  .content {
+    background-color: rgb(146, 62, 103); /* Change to your desired color */
+    padding: 50px;
+    font-size: medium;
+    text-align: center;
+    font-size: larger;
+  }
+  
+  .content h1 {
+    color: rgb(146, 62, 103); /* Change to your desired color */
+    margin-top: 100px;
+    margin-bottom: 300px;
+    font-size: 150px;
+    text-align: center;
+    text-decoration: line-through lightgray ;
+  }
+  
+  
+  .contentH1 {
+    color: rgb(146, 62, 103); /* Change to your desired color */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: line-through white ;
+  }
+  
+  .contentH3 {
+    color: rgb(146, 62, 103); /* Change to your desired color */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration:double ;
+  }
+  
+  .content p {
+    color: rgb(228, 211, 223); /* Change to your desired color */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Picture styles */
+  .picture {
+    margin-top: 50px;
+    text-align: center;
+    margin-right: auto ;
+    height: 500;
+    width: 600;
+  }
+  .employees {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+    gap: 20px; /* Gap between items */
+    margin-top: 50px;
+  }
+  
+  .employee:nth-child(5) {
+    grid-column: 1 / 3; /* Center the last bio */
+    margin-bottom: 200px;
+  }
+  .employee {
+    text-align: center;
+  }
+  
+  .employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .employee .bio {
+    margin-top: 10px;
+  }
+  
+  .employee h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .employee p {
+    font-size: 14px;
+  }
+  
+  .box{
+   color:black;
+   background-color:white;
+   margin:30px;
+   border:5px solid rgb(228, 211, 223);
+   padding:5%;
+   width:20%;
+   height: 200px;
+  }
+  
+  .contain {
+    display: flex;
+    justify-content: space-between ; /* Distribute space evenly between the boxes */
+  }
+  
+  .formbox {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 60px;
+  }
+  
+  .formbox h3 {
+    text-align: center;
+  }
+  
+  .formbox form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formbox label {
+    margin-bottom: 10px;
+  }
+  
+  .formbox input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formbox input[type="submit"] {
+    padding: 10px;
+    background-color: rgb(146, 62, 103);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formbox input[type="submit"]:hover {
+    background-color: rgb(132, 43, 86);
+  }
+  
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .contact-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: auto; /* Move to the bottom of the screen */
+  }
+  
+  .contact-box {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .contact-box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-box p {
+    margin: 5px 0;
+  }
+  
+  .contact-box p:first-child {
+    margin-top: 0;
+  }
+  

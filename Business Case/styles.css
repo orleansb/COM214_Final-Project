@@ -11,7 +11,7 @@
   padding: 20px; /* Add padding for spacing */
   border: 2px solid rgb(228, 211, 223); /* Add border */
   border-radius: 10px; 
-  background-color: rgb(228, 211, 223); 
+  background-color:rgb(211, 144, 186); 
   box-shadow: 0 0 10px c; /* Add box shadow for depth */
   flex :1;
 }
@@ -19,9 +19,8 @@
 
 /* Navigation bar styles */
 nav {
-  background-color: rgb(145, 76, 131); /* Change to your desired color */
-  z-index: 1000;
-  position: relative;
+  background-color: rgb(146, 62, 103); /* Change to your desired color */
+
 }
 
 nav ul {
@@ -31,7 +30,7 @@ nav ul {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgb(145, 76, 131);
+  background-color: rgb(211, 144, 186);
 }
 
 nav ul li {
@@ -47,16 +46,16 @@ nav ul li a {
 }
 
 li a:hover {
-  background-color: #b53e89;
+  background-color: #8d3c6c;
 }
 
 .active {
-  background-color: rgb(119, 72, 110);
+  background-color: rgb(201, 94, 149);
 }
 
 /* Content styles */
 .content {
-  background-color: rgb(228, 211, 223); /* Change to your desired color */
+  background-color: whitesmoke; /* Change to your desired color */
   padding: 50px;
   font-size: medium;
   text-align: center;
@@ -64,16 +63,35 @@ li a:hover {
 }
 
 .content h1 {
+  color:  white; /* Change to your desired color */
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 150px;
+  text-align: center;
+  text-decoration: line-through  rgb(211, 144, 186) ;
+}
+
+
+.contentH1 {
   color: rgb(145, 76, 131); /* Change to your desired color */
   margin-top: 100px;
-  margin-bottom: 300px;
-  font-size: 300px;
+  margin-bottom: 100px;
+  font-size: 60px;
   text-align: center;
-  text-decoration: line-through rgb(228, 211, 223) ;
+  text-decoration: line-through white ;
+}
+
+.contentH3 {
+  color: rgb(145, 76, 131); /* Change to your desired color */
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration:double ;
 }
 
 .content p {
-  color: #171616; /* Change to your desired color */
+  color: whitesmoke; /* Change to your desired color */
   margin-bottom: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -82,9 +100,11 @@ li a:hover {
 /* Picture styles */
 .picture {
   margin-top: 50px;
-  text-align: center;
-  margin-right: auto ;
+  /*position: auto;*/
+  width: 100px;
+  height: 10px;
 }
+
 .employees {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Three columns */
@@ -117,4 +137,41 @@ li a:hover {
 
 .employee p {
   font-size: 14px;
+}
+
+.box{
+ color:black;
+ background-color:white;
+ margin:30px;
+ border:5px solid rgb(145, 76, 131);
+ padding:5%;
+ width:20%;
+ height: 200px;
+}
+
+.contain {
+  display: flex;
+  justify-content: space-between ; /* Distribute space evenly between the boxes */
+}
+
+.formbox{
+ color:black;
+ background-color:white;
+ margin:30px auto;
+ border:5px solid rgb(145, 76, 131);
+ padding:5%;
+ width:30%;
+ max-width: 500px;
+ height: 250px
+
+}
+
+.design {
+  max-width: 20px; /* Set the maximum width of the image to fit its content */
+  max-height: auto;
+  margin: auto; /* Center the image horizontally within its container */
+}
+
+.rotate {
+  transform: rotate(90deg); /* Rotate the image by 45 degrees */
 }

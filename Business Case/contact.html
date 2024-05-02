@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - WebWise Consulting</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Contact</title>
+  <link rel="stylesheet" href="cstyles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>WebWise Consulting</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="Homepage/index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ourwork.html">Our Work</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-        <li><a href="Reviews/reviews.html">Reviews</a></li>
 
-      </ul>
-    </nav>
-    <main>
-      <h2>Contact Us</h2>
-      <p>Please reach out via email contact@webwiseconsulting.com</p>
-    </main>
+  <div class = "container1">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="ourwork.html">Our Work</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <div class = "contentH1">
+    <h1>Contact Us</h1>
+  </div>
+
+  <div  class="video-container">
+    <video id="myVideo" controls loop width="600" height="600">
+      <source src="intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="formbox">
+    <h3>For further information please fill the form below</h3>
+    <form name="input" action="index.html" method="get">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="in1"><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="in2"><br>
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="in3"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+    
+
+  <div class="contact-container">
+    <div class="contact-box">
+      <h4>Contact Information</h4>
+      <p>WhatsApp: +1 864-802-9090</p>
+      <p>Email: bellatech@gmail.com, bt@outlook.com</p>
+      <p>Instagram: @bellaTech</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+    <div class ="content" style="height: 20px;">
     <footer>
-      <p>&copy; 2024 WebWise Consulting</p>
+      <p>&copy; 2024 BellaTech</p>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="video.js"></script>
+
 </body>
 </html>

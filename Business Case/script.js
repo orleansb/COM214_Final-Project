@@ -27,20 +27,3 @@ document.addEventListener('DOMContentLoaded', function() {
         popupWindow.focus();
     }
 }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const observer = new IntersectionObserver((entries) => {
-//       entries.forEach(entry => {
-//           if (entry.isIntersecting) {
-//               entry.target.classList.add('visible');
-//           } else {
-//               entry.target.classList.remove('visible');
-//           }
-//       });
-//   }, {
-//       threshold: 3 // Adjust if necessary to trigger earlier or later
-//   });
-
-//   const elements = document.querySelectorAll('.fade-in');
-//   elements.forEach(el => observer.observe(el));
-// });
