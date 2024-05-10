@@ -1,29 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header h1');
-  
-    header.addEventListener('click', function() {
-      // Generate a random color
-      const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-      
-      // Change the color of the header text
-      header.style.color = randomColor;
-    });
-  });
-  
-  function openPopup(imageUrl) {
-    // Specify the width and height of the popup window
-    var width = 600;
-    var height = 400;
-    
-    // Calculate the left and top positions to center the window
-    var left = (window.innerWidth - width) / 2;
-    var top = (window.innerHeight - height) / 2;
-    
-    // Open the popup window
-    var popupWindow = window.open(imageUrl, 'ImagePopup', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
-    
-    // Focus the popup window
-    if (popupWindow) {
-        popupWindow.focus();
-    }
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  // Toggle the 'open' class which controls the visibility and transformation of the menu and icon
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
+
+// Add event listeners to the hamburger icon for better performance and separation of concerns
+document.addEventListener('scroll', function() {
+  var windowHeight = window.innerHeight;
+  var textContainer = document.querySelector('.section__text');
+  var imageContainerHeight = document.querySelector('.section__pic-container').offsetHeight;
+  var textContainerBottom = textContainer.offsetTop + textContainer.offsetHeight;
+  
+  if (window.scrollY + windowHeight > textContainerBottom + imageContainerHeight) {
+      textContainer.style.position = 'absolute'; // Keeps the text within the image
+      textContainer.style.bottom = '0'; // Aligns text to the bottom of the image container
+      textContainer.style.top = 'auto'; // Prevents the top property from affecting the position
+  } else {
+      textContainer.style.position = 'fixed'; // Text will scroll with the page
+      textContainer.style.top = '50%'; // Center text vertically in the viewport
+      textContainer.style.bottom = 'auto'; // Ensure bottom doesn't affect position
+  }
+});
+

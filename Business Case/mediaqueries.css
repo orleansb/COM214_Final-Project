@@ -1,0 +1,108 @@
+/* Medium Devices, Desktops */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh; /* Maintain proportionate height */
+    margin-bottom: 6rem; /* More bottom margin for separation */
+  }
+  .about-containers, .experience-details-container, .project-details-container {
+    flex-wrap: wrap; /* Ensure content wraps properly */
+  }
+  #contact,
+  #projects {
+    height: auto; /* Use auto instead of fit-content for better browser compatibility */
+  }
+}
+@media (max-width: 768px) {
+  #services, #about, #portfolio, #contact {
+      padding-top: 150px; /* Larger padding for smaller devices if necessary */
+  }
+}
+/* Small Devices, Tablets */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: block; /* Ensuring visibility of hamburger menu */
+  }
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block; /* Block layout for simpler stacking */
+  }
+  .arrow {
+    display: none; /* Hide directional arrows not applicable on small screens */
+  }
+  section,
+  .section-container {
+    height: auto; /* Flexible height to accommodate content */
+  }
+  section {
+    margin: 0 3%; /* Smaller margins for smaller screens */
+  }
+  .section__pic-container {
+    width: 100%; /* Full width containers to maximize screen real estate */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 2rem; /* Center alignment and spacing */
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: auto; /* Adjust height based on content */
+  }
+  #profile {
+    height: auto; /* Avoid fixed height to accommodate varying content lengths */
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 0.9rem; /* Slightly smaller font size for small devices */
+  }
+  footer nav {
+    height: auto; /* Flexibility in navigation height */
+    margin-bottom: 1rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-direction: column; /* Stack vertically */
+    flex-wrap: nowrap; /* No wrapping to keep a clean layout */
+  }
+  .contact-info-container {
+    margin: 1rem 0; /* More consistent vertical spacing */
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 0.95rem; /* Smaller font size for compact display */
+  }
+  .experience-sub-title,
+  .logo {
+    font-size: 1.5rem; /* Slightly larger for readability */
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center; /* Improved alignment */
+  }
+  .section__pic-container {
+    width: 90%; /* Leave some margins */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .section__text__p2 {
+    font-size: 1.25rem; /* Appropriate scaling */
+  }
+  .title {
+    font-size: 1.75rem; /* Reduce title size for space efficiency */
+  }
+  .text-container {
+    text-align: left; /* Better readability alignment for left-to-right languages */
+  }
+}
+

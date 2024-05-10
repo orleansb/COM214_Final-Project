@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmen Beauty Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+        <div class="business-name">Carmen Beauty Room</div>
+        <div class="contact-info">
+            Open | Thursday 10am – 8pm | 639 Queen Street East Toronto, Ontario M4M 1G4 | +1 416-778-8892
+        </div>
+    </div>
+    <nav id="desktop-nav">
+        <div class="logo">Carmen Beauty Room</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Carmen Beauty Room</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#services" onclick="togglemenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="togglemenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Salon profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, Welcome to</p>
+            <h1 class="title">Carmen Beauty Room</h1>
+            <p class="section__text__p2">Expert Hair Styling Services</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Book an Appointment
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/facebook.png" alt="Our Facebook page" class="icon" onclick="location.href='https://facebook.com/CarmenBeautyRoom'" style="height: 0.3px; width: 0.3px;"/>
+                <img src="./assets/instagram.png" alt="Our Instagram page" class="icon" onclick="location.href='https://instagram.com/CarmenBeautyRoom'" style="height: 0.3px; width: 0.3px;"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Discover</p>
+        <h1 class="title">About Us</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/" alt="Salon interior" class="about-pic" style="height: 60px; width: 60px;"/>
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>Carmen Beauty Room is dedicated to providing you with the most professional hair styling services in a relaxing and welcoming environment. With years of experience, our team specializes in the latest trends and techniques to bring you the best possible look.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <p class="section__text__p1">Our</p>
+        <h1 class="title">Services</h1>
+        <div class="experience-details-container">
+          <div class="services-container">
+            <div class="service-item">
+                    <img src="./assets/project-1.png" alt="Haircut" class="icon" style="height: 300px; width: 300px;" />
+                    <h3>Haircuts</h3>
+                    <p>Classic and contemporary cuts for all hair types.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/project-3.png" alt="Hair coloring" class="icon"  style="height: 300px; width: 300px;"/>
+                    <h3>Coloring</h3>
+                    <p>Professional coloring services including highlights, balayage, and ombre.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/project-2.png" alt="Styling" class="icon" style="height: 300px; width: 300px;"/>
+                    <h3>Styling</h3>
+                    <p>Elegant and sophisticated styles for all occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Include additional sections as needed -->
+    <script src="script.js"></script>
+
+
+
+
