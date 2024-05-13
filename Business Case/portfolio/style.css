@@ -78,13 +78,14 @@ nav {
 
 .section__text {
   position: absolute;
-  top: 50%;  /* Center vertically */
-  left: 50%; /* Center horizontally */
+  top: 50%;  
+  left: 50%; 
   transform: translate(-50%);
   color: white; 
   text-align: center;
   transition: opacity 0.5s ease-out;
   width: 90%;  /* Adjust based on your design preference */
+  height: 500px;
 }
 
 .section__text h1 {
